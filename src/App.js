@@ -19,7 +19,7 @@ export default function App() {
 return (
   <div className="App">
     <h1>API Posts</h1>
-    
+    <h2>Git changes</h2>
   </div>
 );
 
