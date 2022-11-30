@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Typewriter from 'typewriter-effect';
+
 
 export default function App() {
 
@@ -13,14 +15,19 @@ export default function App() {
   getData()
 }, []);
 
-return (
-  <div className="App">
-    <h1>API Posts</h1>
-    <h2>Git changes</h2>
-  </div>
-);
+  return (
+    <div className="App">
+      <h1>API Posts</h1>
+      <h2>Git changes</h2>
 
+      <Typewriter
+        options={{
+          strings: ['Hello', 'I\'m Luan'],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    </div>
+  )
 
-
- 
 }
